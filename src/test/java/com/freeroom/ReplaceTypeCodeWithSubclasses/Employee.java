@@ -7,23 +7,16 @@ package com.freeroom.ReplaceTypeCodeWithSubclasses;
  * Time: 8:26 PM
  * To change this template use File | Settings | File Templates.
  */
-class Employee {
+abstract class Employee {
     public static final int ENGINEER = 0;
-    private int _type;
-
-    public Employee(int type) {
-        _type = type;
-    }
 
     public static Employee create(int type) {
         switch (type) {
             case ENGINEER:
-                return new Employee(ENGINEER);
+                return new Engineer();
         }
         throw new IllegalArgumentException("Type is invalid.");
     }
 
-    public int getTypeCode() {
-        return _type;
-    }
+    public abstract int getTypeCode();
 }

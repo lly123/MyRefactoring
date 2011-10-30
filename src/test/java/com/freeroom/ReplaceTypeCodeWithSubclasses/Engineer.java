@@ -9,10 +9,6 @@ package com.freeroom.ReplaceTypeCodeWithSubclasses;
  */
 class Engineer extends Employee {
 
-    public Engineer() {
-        super(Employee.ENGINEER);
-    }
-
     public int getTypeCode() {
         return Employee.ENGINEER;
     }
