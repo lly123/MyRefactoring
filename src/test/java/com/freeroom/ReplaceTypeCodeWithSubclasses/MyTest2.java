@@ -16,7 +16,7 @@ public class MyTest2 {
 
     @Test
     public void should_get_employee_type_given_an_engineer() {
-        Employee employee = new Employee(Employee.ENGINEER);
+        Employee employee = Employee.create(Employee.ENGINEER);
         assertThat(employee.getTypeCode(), is(Employee.ENGINEER));
     }
 }

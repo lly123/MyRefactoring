@@ -15,6 +15,14 @@ public class Employee {
         _type = type;
     }
 
+    public static Employee create(int type) {
+        switch (type) {
+            case ENGINEER:
+                return new Employee(ENGINEER);
+        }
+        throw new IllegalArgumentException("Type is invalid.");
+    }
+
     public int getTypeCode() {
         return _type;
     }
