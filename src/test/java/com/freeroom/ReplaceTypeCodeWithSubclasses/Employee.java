@@ -7,7 +7,7 @@ package com.freeroom.ReplaceTypeCodeWithSubclasses;
  * Time: 8:26 PM
  * To change this template use File | Settings | File Templates.
  */
-public class Employee {
+class Employee {
     public static final int ENGINEER = 0;
     private int _type;
 
